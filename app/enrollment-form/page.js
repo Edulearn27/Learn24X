@@ -58,8 +58,7 @@ export default function EnrollmentFormPage() {
 
   // Razorpay Integration (you can replace with your real payment gateway)
   const handlePayment = () => {
-    alert("Redirecting to Payment Gateway...");
-    router.push("/payment-gateway"); // Example: redirect to your Razorpay page
+    router.push("/payment");
   };
 
   return (
@@ -71,11 +70,11 @@ export default function EnrollmentFormPage() {
         className="max-w-md w-full space-y-8 p-10 bg-white/80 border border-blue-200 rounded-2xl shadow-2xl backdrop-blur-md"
       >
         <div className="text-center">
-          <h2 className="mt-6 text-3xl font-extrabold text-cyan-400 drop-shadow-lg">
+          <h2 className="mt-6 text-3xl font-extrabold text-cyan-800 drop-shadow-lg">
             Enroll in a Course
           </h2>
           <p className="mt-2 text-xl text-black font-semibold">{courseName}</p>
-          <p className="text-sm text-slate-400">
+          <p className="text-sm text-slate-100">
             Course ID: #{courseId || "N/A"}
           </p>
         </div>
@@ -93,7 +92,7 @@ export default function EnrollmentFormPage() {
           <Button
             variant="outline"
             onClick={handleViewSyllabus}
-            className="flex-1 border border-slate-500 hover:bg-slate-700 text-slate-400 font-semibold py-2 rounded-lg shadow-md transition cursor-pointer"
+            className="flex-1 border border-slate-500 hover:bg-slate-500 text-slate-400 font-semibold py-2 rounded-lg shadow-md transition cursor-pointer"
           >
             View Syllabus
           </Button>
@@ -113,7 +112,7 @@ export default function EnrollmentFormPage() {
             >
               <div className="space-y-4">
                 <div>
-                  <Label htmlFor="name" className="text-slate-300">
+                  <Label htmlFor="name" className="text-slate-800">
                     Full Name
                   </Label>
                   <Input
@@ -122,12 +121,12 @@ export default function EnrollmentFormPage() {
                     type="text"
                     required
                     placeholder="John Doe"
-                    className="mt-1 block w-full bg-slate-900/60 border border-slate-700 text-white placeholder:text-slate-500"
+                    className="mt-1 block w-full bg-slate-100/60 border border-slate-400 text-black placeholder:text-slate-800"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-slate-300">
+                  <Label htmlFor="email" className="text-slate-800">
                     Email ID
                   </Label>
                   <Input
@@ -136,12 +135,12 @@ export default function EnrollmentFormPage() {
                     type="email"
                     required
                     placeholder="you@example.com"
-                    className="mt-1 block w-full bg-slate-900/60 border border-slate-700 text-white placeholder:text-slate-500"
+                    className="mt-1 block w-full bg-slate-100/60 border border-slate-400 text-black placeholder:text-slate-800"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="studentId" className="text-slate-300">
+                  <Label htmlFor="studentId" className="text-slate-800">
                     Student Unique ID
                   </Label>
                   <Input
@@ -150,14 +149,14 @@ export default function EnrollmentFormPage() {
                     type="text"
                     value={studentId}
                     readOnly
-                    className="mt-1 block w-full bg-slate-900/60 border border-slate-700 text-cyan-400 font-semibold cursor-not-allowed"
+                    className="mt-1 block w-full bg-slate-100/60 border border-slate-400 text-black-400 font-semibold cursor-not-allowed"
                   />
                 </div>
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-cyan-500 hover:bg-cyan-400 text-white py-2 px-4 font-semibold rounded-lg shadow-md hover:shadow-cyan-500/40 transition"
+                className="w-full bg-cyan-800 hover:bg-cyan-400 text-white py-2 px-4 font-semibold rounded-lg shadow-md hover:shadow-cyan-500/40 transition"
               >
                 Register
               </Button>

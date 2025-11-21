@@ -44,18 +44,6 @@ const courses = [
   },
   {
     id: 4,
-    title: "Ethical Hacking & Penetration Testing",
-    description: "Learn to identify vulnerabilities and secure systems like a professional hacker.",
-    level: "Advanced",
-    duration: "16 weeks",
-    students: "890",
-    rating: 4.7,
-    image: "/ethical-hacking-security.jpg",
-    price: "₹2499",
-    originalPrice: "₹5000",
-  },
-  {
-    id: 5,
     title: "Android App Development",
     description: "Create stunning Android applications using Kotlin and Android Studio.",
     level: "Beginner to Intermediate",
@@ -67,7 +55,7 @@ const courses = [
     originalPrice: "₹5000",
   },
   {
-    id: 6,
+    id: 5,
     title: "Game Development with Unity",
     description: "Design and develop 2D and 3D games using Unity and C# programming.",
     level: "Intermediate",

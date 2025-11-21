@@ -7,6 +7,7 @@ import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Tutors from "@/components/tutors"
 import EnrollmentFormPage from "./enrollment-form/page"
+import PaymentPage from "./payment/page"
 import SyllabusPage from "./syllabus/page"
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <ContactUs />
       <Footer />
       <EnrollmentFormPage />
+      <PaymentPage />
     </main>
   )
 }
